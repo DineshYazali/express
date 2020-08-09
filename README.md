@@ -1,0 +1,1 @@
+Build the project using master slave concept
