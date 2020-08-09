@@ -7,6 +7,6 @@ RUN  yum update -y &&\
      yum install nodejs -y  && mkdir /code &&\
      mv files.tar.gz  /code  && cd /code &&\
      tar -xvf files.tar.gz  &&\
-     cd code-base && npm install
+     cd express && npm install
 
-CMD node /code/code-base/index.js
+CMD node /code/express/index.js
