@@ -31,6 +31,6 @@ spec:
     spec:
       containers:
        - name: node
-         image: 494989341217.dkr.ecr.us-east-2.amazonaws.com/node:latest
+         image: omega/node-repo:latest
          ports:
            - containerPort: 4200
