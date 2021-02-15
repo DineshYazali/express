@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
        - name: node
-         image: omega/node-repo:latest
+         image: omega206/node-repo:latest
          ports:
            - containerPort: 4200
            
