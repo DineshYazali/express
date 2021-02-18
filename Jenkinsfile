@@ -48,11 +48,12 @@ pipeline
             steps
             {
                 script {
-                kubernetesDeploy(
-                    configs: 'lerni-svc.yaml',
-                    kubeconfigId: 'K8S',
-                    enableConfigSubstitution: true
-                )  
+                        export AWS_REGION=us-east-2
+                        /usr/bin/docker login -u omega206 -p $DOCKER
+                        $PATH/aws eks update-kubeconfig  --region us-east-2  --name jenkins-eks-cluster
+                        $PATH/kubectl create -f lerni-svc.yaml
+                        $PATH/kubectl get all
+  
                 }
             }
         } 
