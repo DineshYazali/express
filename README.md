@@ -15,6 +15,15 @@ Required HELM commands:
 
 
    1.To create a helm chart use: helm create name-of-chart
+
+
+
    2.Edit the values.yaml,deployment.yaml,service.yaml as per the requirements.
+
+
+
    3.To test the chart: helm lint demochart
+
+
+
    4.To install/deploy a chart:  helm install release-name chart-name
